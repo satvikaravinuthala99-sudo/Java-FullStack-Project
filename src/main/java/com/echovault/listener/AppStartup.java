@@ -1,0 +1,3 @@
+package com.echovault.listener;
+import com.echovault.dao.AdminDAO;import jakarta.servlet.*;import jakarta.servlet.annotation.WebListener;
+@WebListener public class AppStartup implements ServletContextListener { public void contextInitialized(ServletContextEvent e){try{new AdminDAO().seedDefaultAdmin();}catch(Exception ex){e.getServletContext().log("EchoVault admin seed skipped: check MySQL and run database/schema.sql",ex);}} }

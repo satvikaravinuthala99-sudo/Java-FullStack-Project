@@ -1,0 +1,1 @@
+<% String ft=(String)session.getAttribute("flashType"); String fm=(String)session.getAttribute("flashMessage"); if(fm!=null){ %><div class="alert <%= "success".equals(ft)?"success":"" %>"><%= fm %></div><% session.removeAttribute("flashType");session.removeAttribute("flashMessage"); } %>

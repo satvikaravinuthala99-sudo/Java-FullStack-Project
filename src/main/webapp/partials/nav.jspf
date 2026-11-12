@@ -1,0 +1,1 @@
+<nav class="nav"><a class="brand" href="index.jsp"><span class="brand-mark">◈</span>echo<b>vault</b></a><div class="navlinks"><a href="dashboard">My vault</a><a href="create-capsule.jsp">Create</a><a href="logout">Sign out</a></div></nav>
